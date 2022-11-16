@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的社群名單</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">My Firends List</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./favorite.html">favorite</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 列表區 -->
+  <div class="container d-flex flex-wrap justify-content-center my-4" id="firends-list">
+    <div class="card m-2" data-id="">
+      <img src="" class="card-img-top" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <div class="card-body">
+        <p class="card-text"></p>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <!-- 分頁區 -->
+  <nav aria-label="Page navigation example" id="list-pages">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      
+      <li class="page-item"><a class="page-link" data-page="" href="#">1</a></li>
+
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- modal區 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-aling-center" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row align-items-center">
+            <div class="col-8" id="modal-data">
+              <p>Gender :</p>
+              <p>Region :</p>
+              <p>Age :</p>
+              <p>Birthday :</p>
+              <p>E-mail :</p>
+            </div>
+            <div class="col-4" >
+              <img src="" alt="" id="modal-img">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal-footer" id="modal-created">
+          <p>created :</p>
+          <p>updated :</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="./favorite.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+.card img{
+  cursor: pointer;
+  align-items: center;
+  overflow: hidden;
+}
+.modal-body .row .col-4 img{
+  border-radius: 100%;
+}
